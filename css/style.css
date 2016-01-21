@@ -29,6 +29,9 @@
 .purple:hover {
   color: #99ffff !important;
 }
+.gray-light {
+  color: #999 !important;
+}
 p {
   letter-spacing: 1.1px;
 }
@@ -401,14 +404,24 @@ footer {
 .contacts {
   display: block;
 }
+a.contacts {
+  color: #999;
+}
+a.contacts:hover {
+  text-decoration: none;
+  color: #555;
+}
+footer div.row {
+  padding: 50px 0;
+}
 footer p.copyright {
   color: #999 !important;
   font-size: 1rem;
   position: absolute;
   text-align: center;
   bottom: 0;
-  left: 3rem;
   right: 0;
+  left: 3rem;
   z-index: 5;
 }
 /***** end footer *****/
