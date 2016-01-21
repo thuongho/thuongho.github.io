@@ -56,6 +56,9 @@ p {
 }
 nav {
   opacity: 0.8;
+  -webkit-transition: top 1s ease-in-out;
+  -moz-transition: top 1s ease-in-out;
+  -o-transition: top 1s ease-in-out;
   transition: top 1s ease-in-out;
   background: black !important;
 }
@@ -64,6 +67,7 @@ nav {
   top: -100%;
 }
 .thuong-brand span:hover {
+  -webkit-animation: pulse 2s infinite;
   animation: pulse 2s infinite;
 }
 a[class^="underline"] {
@@ -78,9 +82,15 @@ a[class^="underline"]::after {
   position: absolute;
   top: 80%;
   border-bottom: 0.125em solid #e5ccff;
-  transition: all .35s;
+  -webkit-transition: all 0.35s;  
+  -moz-transition: all 0.35s;  
+  -o-transition: all 0.35s;
+  transition: all 0.35s;
 }
 a[class^="underline"]:hover::after {
+  -webkit-transition: all 0.35s;  
+  -moz-transition: all 0.35s;  
+  -o-transition: all 0.35s;
   transition: all 0.35s;
 }
 a.underline_left_to_right::after {
@@ -128,6 +138,9 @@ a.underline_from_center:hover::after {
                 2px 2px 2px #e5ccff,
                 2px 2px 2px white;
 }
+#cover .classy {
+  font-family: 'Kaushan Script', cursive, Arial, Helvetica, sans-serif;
+}
 #cover p {
   color: #99ffff;
   text-shadow: 2px 2px black;
@@ -171,10 +184,14 @@ div[class^="curve-"] {
   cursor: pointer;
 }
 .vault:hover .cw {
+  -webkit-animation: unlock 1s;
+  -webkit-animation-fill-mode: forwards;
   animation: unlock 1s;
   animation-fill-mode: forwards;
 }
 .vault:hover .ccw {
+  -webkit-animation: unlock-back 1s;
+  -webkit-animation-fill-mode: forwards;
   animation: unlock-back 1s;
   animation-fill-mode: forwards;
 }
@@ -184,33 +201,41 @@ div[class^="curve-"] {
 .curve-right-top {
   border-top: 0.5rem solid #99ffff;
   border-right: 0.5rem solid #99ffff;
-  border-top-right-radius: 200%;
+  -webkit-border-top-right-radius: 200%;
   top: 1rem;
   right: 1rem;
+  -ms-transform-origin: -20% 120%; /* IE 9 */
+  -webkit-transform-origin: -20% 120%; /* Chrome, Safari, Opera */
   transform-origin: -20% 120%;
 }
 .curve-left-top {
   border-top: 0.5rem solid #99ffff;
   border-left: 0.5rem solid #99ffff;
-  border-top-left-radius: 200%;
+  -webkit-border-top-left-radius: 200%;
   top: 1rem;
   left: 1rem;
+  -ms-transform-origin: 100% 100%;
+  -webkit-transform-origin: 100% 100%;
   transform-origin: 100% 100%;
 }
 .curve-right-bottom {
   border-bottom: 0.5rem solid #99ffff;
   border-right: 0.5rem solid #99ffff;
-  border-bottom-right-radius: 200%;
+  -webkit-border-bottom-right-radius: 200%;
   bottom: 1rem;
   right: 1rem;
+  -ms-transform-origin: 0% 0%;
+  -webkit-transform-origin: 0% 0%;
   transform-origin: 0% 0%;
 }
 .curve-left-bottom {
   border-bottom: 0.5rem solid #99ffff;
   border-left: 0.5rem solid #99ffff;
-  border-bottom-left-radius: 200%;
+  -webkit-border-bottom-left-radius: 200%;
   bottom: 1rem;
   left: 1rem;
+  -ms-transform-origin: 120% -20%;
+  -webkit-transform-origin: 120% -20%;
   transform-origin: 120% -20%;
 }
 .center-circle {
@@ -221,54 +246,42 @@ div[class^="curve-"] {
   position: absolute;
   top: 2.25rem;
   left: 2.25rem;
+  -webkit-animation: pulse 2s infinite;
   animation: pulse 2s infinite;
 }
+@-webkit-keyframes unlock {
+  0% {-webkit-transform: rotate(30deg) scale(1.4,1.4); opacity: .4;}
+  25% {-webkit-transform: rotate(60deg) scale(1.6,1.6); opacity: .5;}
+  50% {-webkit-transform: rotate(90deg) scale(1.8,1.8); opacity: .8;}
+  100% {-webkit-transform: rotate(120deg) scale(2,2); opacity: 1;}
+}
+@-webkit-keyframes unlock-back {
+  0% {-webkit-transform: rotate(-10deg) scale(1.1,1.1); opacity: .4;}
+  25% {-webkit-transform: rotate(-20deg) scale(1.2,1.2); opacity: .5;}
+  50% {-webkit-transform: rotate(-40deg) scale(1.3,1.3); opacity: .8;}
+  100% {-webkit-transform: rotate(-60deg) scale(1.4,1.4); opacity: 1;}
+}
+@-webkit-keyframes pulse {
+  0% {opacity: 1;}
+  50% {opacity: 0.5;}
+  100% {opacity: 1;}
+}
 @keyframes unlock {
-  0% {
-    transform: rotate(30deg) scale(1.4,1.4);
-    opacity: .4;
-  }
-  25% {
-    transform: rotate(60deg) scale(1.6,1.6);
-    opacity: .5;
-  }
-  50% {
-    transform: rotate(90deg) scale(1.8,1.8);
-    opacity: .8;
-  }
-  100% {
-    transform: rotate(120deg) scale(2,2);
-    opacity: 1;
-  }
+  0% {transform: rotate(30deg) scale(1.4,1.4); opacity: .4;}
+  25% {transform: rotate(60deg) scale(1.6,1.6); opacity: .5;}
+  50% {transform: rotate(90deg) scale(1.8,1.8); opacity: .8;}
+  100% {transform: rotate(120deg) scale(2,2); opacity: 1;}
 }
 @keyframes unlock-back {
-  0% {
-    transform: rotate(-10deg) scale(1.1,1.1);
-    opacity: .4;
-  }
-  25% {
-    transform: rotate(-20deg) scale(1.2,1.2);
-    opacity: .5;
-  }
-  50% {
-    transform: rotate(-40deg) scale(1.3,1.3);
-    opacity: .8;
-  }
-  100% {
-    transform: rotate(-60deg) scale(1.4,1.4);
-    opacity: 1;
-  }
+  0% {transform: rotate(-10deg) scale(1.1,1.1); opacity: .4;}
+  25% {transform: rotate(-20deg) scale(1.2,1.2); opacity: .5;}
+  50% {transform: rotate(-40deg) scale(1.3,1.3); opacity: .8;}
+  100% {transform: rotate(-60deg) scale(1.4,1.4); opacity: 1;}
 }
 @keyframes pulse {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 1;
-  }
+  0% {opacity: 1;}
+  50% {opacity: 0.5;}
+  100% {opacity: 1;}
 }
 
 /* social links */
@@ -279,6 +292,9 @@ div[class^="curve-"] {
   letter-spacing: 1.5px;
   margin-left: 2px;
   margin-right: 2px;
+  -webkit-transition: .25s all linear;
+  -moz-transition: .25s all linear;
+  -o-transition: .25s all linear;
   transition: .25s all linear;
 }
 .social a:hover {
@@ -320,12 +336,8 @@ span.icon-fcc-logo-cp:before {
 
 /***** Filler *****/
 .fill-in {
-  /*background-color: transparent !important;*/
-  /*background: url('images/cloudy-bg.png');*/
-  /*background: url('images/cloudy.png');*/
-  /*background: url('images/astro.png');*/
   background-color: black;
-  background-size: cover;
+  /*background-size: cover;*/
   background-position: right top;
   opacity: 5.0;
   height: 100px;
@@ -385,6 +397,9 @@ span.icon-fcc-logo-cp:before {
   margin-top: 80px;
   margin-right: 10px;
   box-shadow: 0;
+  -webkit-transition: box-shadow 1s;
+  -moz-transition: box-shadow 1s;
+  -o-transition: box-shadow 1s;
   transition: box-shadow 1s;
 }
 .thumbnail:hover {
@@ -400,6 +415,9 @@ span.icon-fcc-logo-cp:before {
 footer {
   margin-bottom: 0px !important;
   position: relative;
+}
+footer h2 {
+  color: #555;
 }
 .contacts {
   display: block;
