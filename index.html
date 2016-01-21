@@ -139,63 +139,84 @@
   Section 3: Portfolio 
   =================
   -->
-  <div class="container" id="portfolio">
-    <div class="row">
-    <div class="col-md-2"></div>
-    <div class="slider col-md-8">
-      <!-- Completed Projects -->
-      <input type="radio" name="slide-switches" id="slide-complete-proj" checked class="slide-switch">
-      <label for="slide-complete-proj" class="slide-label">Ready to Serve</label>
-      <div class="slide-content padded">
-        <div class="proj-head">
-          <h2>Completed Projects</h2>
-        </div>
-        <div class="col-md-4 col-sm-6 thumbnail">
-          <h3>Camper News</h3>
-          <img class='img img-responsive' src="https://docs.google.com/uc?id=0B46iINhPgLTtaktqbjhzSjgyN2M" alt="camper news">
-          <p><b>Bootstrap</b> and <b>Angular</b> project that pulls camper news from <a href="http://www.freecodecamp.com/news/hot">FreeCodeCamp news api</a>.</p>
-          <hr>
-          <p>Project on <a href="http://codepen.io/thuongho/pen/pjLrWJ">CodePen</a></p>
-        </div>
-        <div class="col-md-4 col-sm-6 thumbnail">
-          <h3>DJM Clothing Store</h3>
-          <img class='img img-responsive' src="https://docs.google.com/uc?id=0B46iINhPgLTtY3h3ckJfOFIwajQ" alt="djm ecommerce site">
-          <p><b>Bootstrap</b> and <b>Ruby on Rails</b> ecommerce site that integrates the <b>Paypal api</b>.
-          </p>
-          <hr>
-          <p>View the site at <a href="http://dontjudgeme.herokuapp.com/">dontjudgeme.herokuapp.com</a></p>
-        </div>
-      </div>
+  <div id="portfolio">
+    <div id="carousel-projects" class="carousel slide" data-ride="carousel" data-interval="false">
+      <!-- indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-projects" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-projects" data-slide-to="1"></li>
+      </ol>
 
-      <!-- Fire Hot Projects Still in the Works -->
-      <input type="radio" name="slide-switches" id="slide-incomplete-proj" class="slide-switch">
-      <label for="slide-incomplete-proj" class="slide-label">Cooking in the Oven</label>
-      <div class="slide-content padded">
-        <div class="proj-head">
-          <h2>Fire Hot Projects still in the Works!</h2>
-        </div>
-        <div class="col-md-4 col-sm-6 thumbnail">
-          <h3>onTrack Web App</h3>
-          <figure>
-            <img class='img img-responsive' src="https://docs.google.com/uc?id=0B46iINhPgLTtMWZHak1BeUJ1Q3c" alt="onTrack web app">
-          </figure>
-          
-          <p>Goal tracking web app developed using the <b>MEAN (MongoDB, Express, Angular, Node)</b> stack. The source code can be viewed on <a href="https://github.com/thuongho/onTrack">Github</a>.</p>
-          <hr>
-          <p>View the live site at <a href="https://keepmeontrack.herokuapp.com/">keepmeontrack.herokuapp.com</a></p>
-        </div>
-        <div class="col-md-4 col-sm-6 thumbnail">
-          <h3>Pomodoro Clock</h3>
-          <img class='img img-responsive' src="https://docs.google.com/uc?id=0B46iINhPgLTtQkl4eTh6UldzX2M" alt="pomodoro clock">
-          <p>Pomodoro clock built using <b>jQuery</b> with very minimal <b>Bootstrap</b> styling.</p>
-          <hr>
-          <p>Source code available at <a href="http://codepen.io/thuongho/pen/adVeGz">codepen.io/thuongho/pen/adVeGz</a></p>
-        </div>
-      </div>
-    </div>
-    </div>
-  </div>
-<!-- ***************** end portfolio ***************** -->
+      <!-- wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
+        <!-- Completed Projects -->
+        <div class="item active">
+          <div class="col-md-12 co-sm-12 proj-wrapper">
+            <div class="col-md-2"></div>
+            <div class="col-md-3 col-sm-6 thumbnail">
+              <h4>Camper News</h4>
+              <img class='img img-responsive' src="https://docs.google.com/uc?id=0B46iINhPgLTtaktqbjhzSjgyN2M" alt="camper news">
+              <p><b>Bootstrap</b> and <b>Angular</b> project that pulls camper news from <a href="http://www.freecodecamp.com/news/hot">FreeCodeCamp news api</a>.</p>
+              <hr>
+              <p>Project available at <a href="http://codepen.io/thuongho/pen/pjLrWJ">codepen.io/thuongho</a></p>
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-3 col-sm-6 thumbnail">
+              <h3>DJM Clothing Store</h3>
+              <img class='img img-responsive' src="https://docs.google.com/uc?id=0B46iINhPgLTtY3h3ckJfOFIwajQ" alt="djm ecommerce site">
+              <p><b>Bootstrap</b> and <b>Ruby on Rails</b> ecommerce site that integrates the <b>Paypal api</b>.
+              </p>
+              <hr>
+              <p>View the site at <a href="http://dontjudgeme.herokuapp.com/">dontjudgeme.herokuapp.com</a></p>
+            </div>
+            <div class="md-col-2"></div>
+            <!-- <img src="" alt=""> -->
+            <div class="carousel-caption">
+              <h2>Completed Projects</h2>
+              <p>Ready to serve.</p>
+            </div>
+          </div>
+        </div>  <!-- end item -->
+        <!-- Projects Still in the Works -->
+        <div class="item">
+          <div class="col-md-12 co-sm-12 proj-wrapper">
+            <div class="col-md-2"></div>
+            <div class="col-md-3 col-sm-6 thumbnail">
+              <h3>onTrack Web App</h3>
+              <img class='img img-responsive' src="https://docs.google.com/uc?id=0B46iINhPgLTtMWZHak1BeUJ1Q3c" alt="onTrack web app">
+              <p>Goal tracking web app developed using the <b>MEAN (MongoDB, Express, Angular, Node)</b> stack. The source code can be viewed on <a href="https://github.com/thuongho/onTrack">Github</a>.</p>
+              <hr>
+              <p>View the live site at <a href="https://keepmeontrack.herokuapp.com/">keepmeontrack.herokuapp.com</a></p>
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-3 col-sm-6 thumbnail">
+              <h3>Pomodoro Clock</h3>
+              <img class='img img-responsive' src="https://docs.google.com/uc?id=0B46iINhPgLTtQkl4eTh6UldzX2M" alt="pomodoro clock">
+              <p>Pomodoro clock built using <b>jQuery</b> with very minimal <b>Bootstrap</b> styling.</p>
+              <hr>
+              <p>Project available at <a href="http://codepen.io/thuongho/pen/adVeGz">codepen.io/thuongho</a></p>
+            </div>
+            <div class="md-col-2"></div>
+            <!-- <img src="" alt=""> -->
+            <div class="carousel-caption">
+              <h2>Fire Hot Projects Still in the Works</h2>
+              <p>Still hot in the oven.</p>
+            </div>
+          </div>
+        </div>  <!-- end item -->
+        <!-- Controls -->
+        <a href="#carousel-projects" class="left carousel-control" role="button" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a href="#carousel-projects" class="right carousel-control" role="button" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>  <!-- end carousel inner -->
+    </div>  <!-- end carousel -->
+  </div>  <!-- end portfolio -->
+  <!-- ***************** end portfolio ***************** -->
 
   <!-- 
   =================

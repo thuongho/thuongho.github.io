@@ -337,6 +337,7 @@ span.icon-fcc-logo-cp:before {
   position: relative;
   padding-top: 100px;
   z-index: 3;
+  box-shadow: 2px 2px 2px black;
 }
 #about h2 {
   color: white;
@@ -365,113 +366,6 @@ span.icon-fcc-logo-cp:before {
   position: relative;
   padding: 100px 0;
 }
-.proj-head {
-  background: #008fb3;
-  color: #fff;
-  position: absolute;
-  display: block;
-  z-index: 5;
-  height: 50px;
-  width: 100%;
-  left: 0;
-  right: 0;
-  box-shadow: 2px 2px 2px black;
-}
-.proj-head h2 {
-  /*padding-bottom: 5rem;*/
-  height: 100%;
-  position: absolute;
-  top: -5px;
-  left: 35%;
-  text-shadow: 1px 1px black;
-}
-/* slider */
-.slider h2, h3 {
-  text-align: center; 
-}
-.padded {
-  padding: 1rem 2rem;
-}
-.slide-switch {
-  display: none;
-}
-.slide-content {
-  width: 100%;
-  float: left;
-  margin-right: -100%;
-}
-.slider {
-  background: #e6e6e6;
-  position: relative;
-  margin: 2rem 0;
-  overflow: hidden;
-  padding-bottom: 2.5rem;
-  border: 0.25rem solid #808080;
-}
-.slide-label {
-  position: absolute;
-  bottom: 1rem;
-  display: block;
-  z-index: 5;
-  height: 1rem;
-  width: 1rem;
-  text-indent: 1rem;
-  overflow: hidden;
-  /*background: #e5ccff;*/
-  background: #0099ff;
-  border-radius: 50%;
-  cursor: pointer;
-  transition: all 0.25;
-}
-.slide-label:nth-of-type(1) {
-  left: 1rem;
-}
-.slide-label:nth-of-type(2) {
-  left: 2.5rem;
-}
-.slider::after {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: 1;
-  content: '';
-  display: block;
-  background: #007acc;
-  /*background: #99ffff;*/
-  background: ;
-  height: 3rem;
-}
-.slide-switch:not(:checked) + .slide-label + .slide-content {
-  opacity: 0;
-  transition: opacity 0.35s;
-  pointer-event: none;
-}
-.slide-switch:checked + .slide-label + .slide-content {
-  animation: slide 1s;
-}
-.slide-switch:checked + .slide-label {
-  /*background: #99ffff;*/
-  background: #e5ccff;
-}
-@keyframes slide {
-  0% {
-    transform: translateX(100%);
-  }
-  100% {
-    transform: translateX(0);;
-  }
-}
-/* end slider */
-
-/*.slide-content figure {
-  float: left;
-  border: 10px solid #fff;
-  overflow: hidden;
-  }
-.slide-content figure img {
-  float: left;
-}*/
 .thumbnail {
   margin-top: 80px;
   margin-right: 10px;
@@ -479,8 +373,14 @@ span.icon-fcc-logo-cp:before {
   transition: box-shadow 1s;
 }
 .thumbnail:hover {
-  box-shadow: 3px 3px 3px #515151;
+  box-shadow: 10px 10px 10px #515151;
 }
+.proj-wrapper {
+  padding-bottom: 150px;
+  border: 2px solid gray;
+}
+/******** end portfolio ********/
+
 /*********************
 Start of Media Queries
 **********************/

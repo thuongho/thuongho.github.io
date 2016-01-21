@@ -48,9 +48,10 @@
 
     // unlock the vault
     $('.vault').on('click', function() {
-      $('#cover').fadeOut("slow",function() {
-        $(this).fadeIn().css('background-image', 'url(https://docs.google.com/uc?id=0B46iINhPgLTtR0ItTW0wMklBOHM)')
+      $('#cover').css('background-image', 'url(https://docs.google.com/uc?id=0B46iINhPgLTtR0ItTW0wMklBOHM)').fadeOut("slow",function() {
+        $(this).fadeIn();
       });
+        
       $('#cover').css('background-position', 'fixed');
     });
   });  // end doc ready
