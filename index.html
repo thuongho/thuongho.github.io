@@ -1,10 +1,225 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Hello World</title>
+  <meta name="author" content="Thuong Ho">
+  <meta name="description" content="Thuong's personal portfolio page that was inspired by the freecodecamp curriculum's personal portfolio" />
+  <meta name="keywords" content="Thuong's personal portfolio, freecodecamp personal portfolio, fcc personal portfolio" />
+  <meta name="robots" content="index,follow">
+
+  <!-- bootstrap css -->
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.3/animate.min.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- icons from foundation -->
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.ttf">
+  <!-- fcc icon from fontastic -->
+  <link href="//file.myfontastic.com/Py9RXv5ftJmYUJJGaS34rf/icons.css" rel="stylesheet">
+
+  <!-- javascript -->
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
+
+  <title>Thuong's Portfolio</title>
 </head>
 <body>
-  <h1>Testing out the waters with github.</h1>
+
+<div class='container-fluid'>
+  <!-- 
+  =================
+  navbar 
+  =================
+  --> 
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-links" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand purple" href="#">Thuong Ho</a>
+    </div>
+    <!-- collapse section including links -->
+    <div class="collapse navbar-collapse" id="nav-links">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="active">
+          <a href="#cover" class="black">Home</a>
+        </li>
+        <li>
+          <a href="#about" class="underline_right_to_left">About</a>
+        </li>
+        <li>
+          <a href="#portfolio" class="underline_from_center">Porfolio</a>
+        </li>
+        <li>
+          <a href="#links" class="underline_left_to_right">Links</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- ************* end navbar ************* -->
+
+  <!-- 
+  =================
+  Section 1: Cover 
+  =================
+  -->
+  <header class="container" id="cover">
+    <div class="row">
+      <div class="greeting">
+        <h2>Welcome to my dream vault</h2>
+        <p>
+          An unlimited space to explore the depths of my <a href='https://github.com/thuongho' target='_blank'>imagination</a>
+        </p>
+        <div class="fade-bg"></div>
+      </div>  <!-- end greeting -->
+      <div class="vault">
+        <div class="curve-right-top cw"></div>
+        <div class="curve-left-top ccw"></div>
+        <div class="curve-right-bottom ccw"></div>
+        <div class="curve-left-bottom cw"></div>
+        <div class="center-circle power"></div>
+      </div>  <!-- end vault -->
+      <hr>
+      <div class="center social">
+        <div class="col-md-3">
+          <a href="https://twitter.com/ThuongTHo" class="btn btn-block"><span class="fi-social-twitter"></span>Twitter</a>
+        </div>
+        <div class="col-md-3">
+          <a href="https://github.com/thuongho" class="btn btn-block"><span class="fi-social-github"></span>Github</a>
+        </div>
+        <div class="col-md-3">
+          <a href="https://www.linkedin.com/in/thuongtho" class="btn btn-block"><span class="fi-social-linkedin"></span>LinkedIn</a>
+        </div>
+        <div class="col-md-3">
+          <a href="http://www.freecodecamp.com/thuongho" class="btn btn-block fcc"><i><span class="icon-fcc-logo-cp"></span>FreeCodeCamp</i></a>
+        </div>
+      </div>  <!-- end social -->
+    </div>  <!-- end row -->
+  </header>
+  <!-- ************* end cover ************* -->
+  
+  <!-- Fill In -->
+  <div class="row">
+    <div class="col-md-12 fill-in">
+      <figure>
+        <img src="https://docs.google.com/uc?id=0B46iINhPgLTtb3E1cTlyVXFWLU0" alt="hiking" class="img normal">
+      </figure>
+    </div>
+  </div> <!-- end fill in -->
+
+  <!-- 
+  =================
+  Section 2: About 
+  =================
+  -->
+  <div class="container" id="about">
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-2 col-sm-12">
+        <img class="img-responsive img-circle img-thumbnail" src="https://gravatar.com/avatar/3a5547cf53ae5e80da95d1a5294bbafe?s=80" alt="Thuong">
+      </div>
+      <div class="col-md-9 col-sm-12 col-xs-12 bio">
+        <h2>Thuong "tune" Ho</h2>
+        <p class="right umph">The name is Thuong, but pronounced like "Tune". Perhaps hearing my name over and over has sparked a passion for music in me. Along with being an Above & Beyond groupie, I am also a dysfunctional guitarist. In the very least, if I get stranded on an island with a guitar, I can still jam on some tunes. :)</p>
+        <p class="right umph">As the days go by, I find myself enjoying the outdoors more and more. Whenever I can find the time, I try to catch the sun retiring for the day. Something about the sun reeling in its last rays of light, like a sorcerer casting a magical spell over the land and robbing it of light, is quite heartwarming to watch.</p>
+        <p class="right umph">Other than that, I am a full-stack developer with an interest in front-end development. At times, I would masquerade as a designer, hoping to attain the "eye" for design.</p>
+        <p class="right umph invisible">Why do I code? A question I quite feverishly ask myself while dealing with the challenges that comes as baggage with this madness called coding. Night in and night out, the unsolved mysteries haunt me, slowly eating away at my sanity. Taunting me as I stare it in the eyes. Each pressing moment feels like I am playing a game of Russian Roulette with a loaded gun. Teetering between giving up and continuing, the horror of failing as developer relentlessly plagues my mind.</p>
+      </div>
+      <div class="hidden-lg fix-me"></div>
+    </div>
+  </div>
+  <!-- ************* end about ************* -->
+
+  <!-- 
+  =================
+  Section 3: Portfolio 
+  =================
+  -->
+  <div class="container" id="portfolio">
+    <div class="row">
+    <div class="col-md-2"></div>
+    <div class="slider col-md-8">
+      <!-- Completed Projects -->
+      <input type="radio" name="slide-switches" id="slide-complete-proj" checked class="slide-switch">
+      <label for="slide-complete-proj" class="slide-label">Ready to Serve</label>
+      <div class="slide-content padded">
+        <div class="proj-head">
+          <h2>Completed Projects</h2>
+        </div>
+        <div class="col-md-4 col-sm-6 thumbnail">
+          <h3>Camper News</h3>
+          <img class='img img-responsive' src="https://docs.google.com/uc?id=0B46iINhPgLTtaktqbjhzSjgyN2M" alt="camper news">
+          <p><b>Bootstrap</b> and <b>Angular</b> project that pulls camper news from <a href="http://www.freecodecamp.com/news/hot">FreeCodeCamp news api</a>.</p>
+          <hr>
+          <p>Project on <a href="http://codepen.io/thuongho/pen/pjLrWJ">CodePen</a></p>
+        </div>
+        <div class="col-md-4 col-sm-6 thumbnail">
+          <h3>DJM Clothing Store</h3>
+          <img class='img img-responsive' src="https://docs.google.com/uc?id=0B46iINhPgLTtY3h3ckJfOFIwajQ" alt="djm ecommerce site">
+          <p><b>Bootstrap</b> and <b>Ruby on Rails</b> ecommerce site that integrates the <b>Paypal api</b>.
+          </p>
+          <hr>
+          <p>View the site at <a href="http://dontjudgeme.herokuapp.com/">dontjudgeme.herokuapp.com</a></p>
+        </div>
+      </div>
+
+      <!-- Fire Hot Projects Still in the Works -->
+      <input type="radio" name="slide-switches" id="slide-incomplete-proj" class="slide-switch">
+      <label for="slide-incomplete-proj" class="slide-label">Cooking in the Oven</label>
+      <div class="slide-content padded">
+        <div class="proj-head">
+          <h2>Fire Hot Projects still in the Works!</h2>
+        </div>
+        <div class="col-md-4 col-sm-6 thumbnail">
+          <h3>onTrack Web App</h3>
+          <figure>
+            <img class='img img-responsive' src="https://docs.google.com/uc?id=0B46iINhPgLTtMWZHak1BeUJ1Q3c" alt="onTrack web app">
+          </figure>
+          
+          <p>Goal tracking web app developed using the <b>MEAN (MongoDB, Express, Angular, Node)</b> stack. The source code can be viewed on <a href="https://github.com/thuongho/onTrack">Github</a>.</p>
+          <hr>
+          <p>View the live site at <a href="https://keepmeontrack.herokuapp.com/">keepmeontrack.herokuapp.com</a></p>
+        </div>
+        <div class="col-md-4 col-sm-6 thumbnail">
+          <h3>Pomodoro Clock</h3>
+          <img class='img img-responsive' src="https://docs.google.com/uc?id=0B46iINhPgLTtQkl4eTh6UldzX2M" alt="pomodoro clock">
+          <p>Pomodoro clock built using <b>jQuery</b> with very minimal <b>Bootstrap</b> styling.</p>
+          <hr>
+          <p>Source code available at <a href="http://codepen.io/thuongho/pen/adVeGz">codepen.io/thuongho/pen/adVeGz</a></p>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+<!-- ***************** end portfolio ***************** -->
+
+  <!-- 
+  =================
+  Footer 
+  =================
+  -->
+  <footer class='jumbotron social' id="links">
+    <h2 class='text-center'>Contact me</h2>
+    <div class='row'>
+      <div class='col-md-3'>
+        <a class='btn btn-block' href='#' target='_blank'>Twitter</a>
+      </div>
+      <div class='col-md-3'>
+        <a class='btn btn-block' href='#' target='_blank'>LinkedIn</a>
+      </div>
+      <div class='col-md-3'>
+        <a class='btn btn-block' href='#' target='_blank'>Gmail</a>
+      </div>
+      <div class='col-md-3'>
+        <a class='btn btn-block' href='#' target='_blank'>Facebook</a>
+      </div>
+    </div>
+  </footer>
+</div>
+  
 </body>
 </html>
