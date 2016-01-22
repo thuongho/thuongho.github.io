@@ -205,6 +205,8 @@ div[class^="curve-"] {
   border-top: 0.5rem solid #99ffff;
   border-right: 0.5rem solid #99ffff;
   -webkit-border-top-right-radius: 200%;
+  -moz-border-top-right-radius: 200%;
+  border-top-right-radius: 200%;
   top: 1rem;
   right: 1rem;
   -ms-transform-origin: -20% 120%; /* IE 9 */
@@ -215,6 +217,8 @@ div[class^="curve-"] {
   border-top: 0.5rem solid #99ffff;
   border-left: 0.5rem solid #99ffff;
   -webkit-border-top-left-radius: 200%;
+  -moz-border-top-left-radius: 200%;
+  border-top-left-radius: 200%;
   top: 1rem;
   left: 1rem;
   -ms-transform-origin: 100% 100%;
@@ -225,6 +229,8 @@ div[class^="curve-"] {
   border-bottom: 0.5rem solid #99ffff;
   border-right: 0.5rem solid #99ffff;
   -webkit-border-bottom-right-radius: 200%;
+  -moz-border-bottom-right-radius: 200%;
+  border-bottom-right-radius: 200%;
   bottom: 1rem;
   right: 1rem;
   -ms-transform-origin: 0% 0%;
@@ -235,6 +241,8 @@ div[class^="curve-"] {
   border-bottom: 0.5rem solid #99ffff;
   border-left: 0.5rem solid #99ffff;
   -webkit-border-bottom-left-radius: 200%;
+  -moz-border-bottom-left-radius: 200%;
+  border-bottom-left-radius: 200%;
   bottom: 1rem;
   left: 1rem;
   -ms-transform-origin: 120% -20%;
