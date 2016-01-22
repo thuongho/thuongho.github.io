@@ -437,6 +437,7 @@ a.contacts {
   color: #999;
 }
 a.contacts:hover {
+  font-family: 'Kaushan Script', cursive, Arial, Helvetica, sans-serif;
   text-decoration: none;
   color: #555;
 }
@@ -457,10 +458,23 @@ footer p.copyright {
 /*********************
 Start of Media Queries
 **********************/
+@media screen and (max-width: 991px) {
+  .proj-wrapper:before,
+  .proj-wrapper:after {
+    content: " ";
+    display: table;
+  }
+  .proj-wrapper:after {
+    clear: both;
+  }
+}
 /*772*/
 @media screen and (max-width: 772px) {
   .fix-me {
     height: 250px;
+  }
+  .contacts {
+    text-align: center;
   }
 }
 @media screen and (max-width: 508px) {
