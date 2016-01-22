@@ -33,12 +33,12 @@
     function hideOrShowNavbar() {
       var scrollPosition = $(this).scrollTop();
       // ******** Stats ********
-      console.log('lastST' + lastScrollTop);
-      console.log('scrollP' + scrollPosition);
-      console.log('navbarH' + navbarHeight);
-      console.log('winH' + $(window).height());
-      console.log('docH' + $(document).height());
-      console.log('----------------------------');
+      // console.log('lastST' + lastScrollTop);
+      // console.log('scrollP' + scrollPosition);
+      // console.log('navbarH' + navbarHeight);
+      // console.log('winH' + $(window).height());
+      // console.log('docH' + $(document).height());
+      // console.log('----------------------------');
 
       if (Math.abs(lastScrollTop - scrollPosition) <= scrollTrigger) {
         return;
