@@ -26,6 +26,9 @@
 .dream-blue {
   color: #99ffff;
 }
+.dream-blue:hover {
+  color: #e5ccff;
+}
 .purple:hover {
   color: #99ffff !important;
 }
