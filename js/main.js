@@ -58,6 +58,8 @@
     // ********* end hide navbar *********
 
     // ********* make navbar links active *********
+    // On page load or screen resize, grap window top of Home, About, Portfolio, Links
+    // Give each one a number like 1, 2, 3, 4 and make checks to that number
     // SP 0 Home 868 About 1311 Portfolio 2161 Links
     // var $home = $('#cover'),
     //     $about = $('#about'),
