@@ -407,6 +407,7 @@ span.icon-fcc-logo-cp:before {
 .thumbnail {
   margin-top: 80px;
   margin-right: 10px;
+  margin-left: 10px;
   box-shadow: 0;
   -webkit-transition: box-shadow 1s;
   -moz-transition: box-shadow 1s;
