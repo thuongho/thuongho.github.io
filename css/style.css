@@ -124,7 +124,7 @@ a.underline_from_center:hover::after {
 
 /***** Cover Section *****/
 #cover {
-  background: url('https://docs.google.com/uc?id=0B46iINhPgLTtb2ItQW9aR0p0WTA') 0px fixed;
+  background: url('../images/cosmic.svg') 0px fixed;
   background-size: cover;
   background-color: #9900cc;
   height: auto;
@@ -365,7 +365,7 @@ span.icon-fcc-logo-cp:before {
   position: relative;
 }
 #about {
-  background: url('https://docs.google.com/uc?id=0B46iINhPgLTtcVlGQlFzSElmOW8') fixed;
+  background: url('../images/palm-trees.svg') fixed;
   background-size: cover;
   position: absolute;
   top: 0;
@@ -396,7 +396,7 @@ span.icon-fcc-logo-cp:before {
 
 /******** Porfolio ********/
 #portfolio {
-  background: url('https://docs.google.com/uc?id=0B46iINhPgLTtQlVKeVBlUUpzZG8');
+  background: url('../images/old-paper-bg.png');
   background-size: cover;
   height: auto;
   margin: 0 auto;

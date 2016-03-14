@@ -3,7 +3,7 @@
 
     // unlock the vault
     $('.vault').on('click', function() {
-      $('#cover').css('background-image', 'url(https://docs.google.com/uc?id=0B46iINhPgLTtR0ItTW0wMklBOHM)').fadeOut("slow",function() {
+    $('#cover').css('background-image', 'url(../images/cosmic.jpg)').fadeOut("slow",function() {
         $(this).fadeIn();
       });
       $('#cover').css('background-position', 'fixed');
