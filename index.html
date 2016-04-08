@@ -1,288 +1,283 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="author" content="Thuong Ho">
-  <meta name="description" content="Thuong's personal portfolio page that was inspired by the freecodecamp curriculum's personal portfolio" />
-  <meta name="keywords" content="Thuong's personal portfolio, freecodecamp personal portfolio, fcc personal portfolio" />
-  <meta name="robots" content="index,follow">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Thuong Ho - Full-Stack Software Engineer</title>
+<meta name="description" content="">
+<meta name="author" content="">
 
-  <!-- favicon -->
-  <!-- <link rel="icon" href="favicon.ico" type="image/x-icon" /> -->
-  <link rel="icon" href="http://thuongho.github.io/favicon.ico?r=31241" type="image/x-icon" />
+<!-- Favicons
+    ================================================== -->
+<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
 
-  <!-- Google Fonts -->
-  <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+<!-- Bootstrap -->
+<link rel="stylesheet" type="text/css"  href="css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css">
 
-  <!-- bootstrap css -->
-  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.3/animate.min.css">
-  <link rel="stylesheet" href="css/style.css">
+<!-- Slider
+    ================================================== -->
+<link href="css/owl.carousel.css" rel="stylesheet" media="screen">
+<link href="css/owl.theme.css" rel="stylesheet" media="screen">
 
-  <!-- icons from foundation -->
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.ttf">
-  <!-- fcc icon from fontastic -->
-  <link href="//file.myfontastic.com/Py9RXv5ftJmYUJJGaS34rf/icons.css" rel="stylesheet">
+<!-- Stylesheet
+    ================================================== -->
+<link rel="stylesheet" type="text/css"  href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/prettyPhoto.css">
+<link href='http://fonts.googleapis.com/css?family=Lato:400,700,900,300' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800,600,300' rel='stylesheet' type='text/css'>
+<script type="text/javascript" src="js/modernizr.custom.js"></script>
 
-  <!-- javascript -->
-  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-  <script src="js/main.js"></script>
-
-  <title>Thuong's Dream Vault</title>
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
 </head>
-<body>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
-<div class='container-fluid'>
-  <!-- 
-  =================
-  navbar 
-  =================
-  --> 
-  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-links" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand purple thuong-brand" href="http://thuongho.github.io/"><b>D</b><span class="dream-blue">ream</span> <b>V</b><span class="dream-blue">ault</span></a>
-    </div>
-    <!-- collapse section including links -->
-    <div class="collapse navbar-collapse" id="nav-links">
-      <ul class="nav navbar-nav navbar-right">
-        <li class="active">
-          <a href="#cover" class="black">Home</a>
-        </li>
-        <li>
-          <a href="#about" class="underline_right_to_left">About</a>
-        </li>
-        <li>
-          <a href="#portfolio" class="underline_from_center">Portfolio</a>
-        </li>
-        <li>
-          <a href="#links" class="underline_left_to_right">Links</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-  <!-- ************* end navbar ************* -->
-
-  <!-- 
-  =================
-  Section 1: Cover 
-  =================
-  -->
-  <header class="container" id="cover">
-    <div class="row">
-      <div class="greeting">
-        <h2><span class="classy">Welcome to the Dream Vault</span></h2>
-        <p>
-          An unlimited space to explore the depths of the <a href='https://github.com/thuongho' target='_blank'><span class="classy">imagination</span></a>
-        </p>
-        <div class="fade-bg"></div>
-      </div>  <!-- end greeting -->
-      <div class="vault">
-        <div class="curve-right-top cw"></div>
-        <div class="curve-left-top ccw"></div>
-        <div class="curve-right-bottom ccw"></div>
-        <div class="curve-left-bottom cw"></div>
-        <div class="center-circle power"></div>
-      </div>  <!-- end vault -->
-      <hr>
-      <div class="center social">
-        <div class="col-md-3">
-          <a href="https://twitter.com/ThuongTHo" class="btn btn-block"><span class="fi-social-twitter"></span>Twitter</a>
-        </div>
-        <div class="col-md-3">
-          <a href="https://github.com/thuongho" class="btn btn-block"><span class="fi-social-github"></span>Github</a>
-        </div>
-        <div class="col-md-3">
-          <a href="https://www.linkedin.com/in/thuongtho" class="btn btn-block"><span class="fi-social-linkedin"></span>LinkedIn</a>
-        </div>
-        <div class="col-md-3">
-          <a href="http://www.freecodecamp.com/thuongho" class="btn btn-block fcc"><i><span class="icon-fcc-logo-cp"></span>FreeCodeCamp</i></a>
-        </div>
-      </div>  <!-- end social -->
-    </div>  <!-- end row -->
-  </header>
-  <!-- ************* end cover ************* -->
-  
-  <!-- Fill In -->
-  <div class="row">
-    <div class="col-md-12 fill-in">
-      <figure>
-        <img src="images/hiking-cut-sm.png" alt="hiking" class="img normal">
-      </figure>
-    </div>
-  </div> <!-- end fill in -->
-
-  <!-- 
-  =================
-  Section 2: About 
-  =================
-  -->
-  <div class="container" id="about">
-    <div class="row">
-      <div class="col-md-12 col-sm-12">
-        <img class="img-responsive img-circle img-thumbnail" src="https://gravatar.com/avatar/3a5547cf53ae5e80da95d1a5294bbafe?s=80" alt="Thuong">
+<!-- Header -->
+<header class="intro">
+  <div class="intro-body">
+    <div class="container">
+      <div class="row">
+        <div class="intro-text">
+          <h1>Thuong Ho</h1>
+          <p class="titles">Software Engineer  &nbsp;|&nbsp;  Civic Hacker  &nbsp;|&nbsp;  Adventurer</p>
+          <a href="#about" class="btn btn-default btn-lg page-scroll">About Me</a> <a href="#portfolio" class="btn btn-default btn-lg page-scroll">My Portfolio</a></div>
       </div>
-      <div class="col-md-12 col-sm-12 col-xs-12 bio">
-        <h2>Thuong "tune" Ho</h2>
-        <p class="right umph">The name is Thuong, but pronounced like "Tune". Perhaps hearing my name over and over has sparked a passion for music in me. Along with being an Above & Beyond groupie, I am also a dysfunctional guitarist. In the very least, if I get stranded on an island with a guitar, I can still jam on some tunes. :)</p>
-        <p class="right umph">As the days go by, I find myself enjoying the outdoors more and more. Whenever I can find the time, I try to catch the sun retiring for the day. Something about the sun reeling in its last rays of light, like a sorcerer casting a magical spell over the land and robbing it of light, is quite heartwarming to watch.</p>
-        <p class="right umph">Other than that, I am a full-stack developer with an interest in front-end development. At times, I would masquerade as a designer, hoping to attain the "eye" for design.</p>
-        <p class="right umph invisible">Why do I code? A question I quite feverishly ask myself while dealing with the challenges that comes as baggage with this madness called coding. Night in and night out, the unsolved mysteries haunt me, slowly eating away at my sanity. Taunting me as I stare it in the eyes. Each pressing moment feels like I am playing a game of Russian Roulette with a loaded gun. Teetering between giving up and continuing, the horror of failing as developer relentlessly plagues my mind.</p>
-      </div>
-      <div class="hidden-lg fix-me"></div>
     </div>
   </div>
-  <!-- ************* end about ************* -->
-
-  <!-- 
-  =================
-  Section 3: Portfolio 
-  =================
-  -->
-  <div id="portfolio">
-    <div id="carousel-projects" class="carousel slide" data-ride="carousel" data-interval="false">
-      <!-- indicators -->
-      <ol class="carousel-indicators">
-        <li data-target="#carousel-projects" data-slide-to="0" class="active"></li>
-        <li data-target="#carousel-projects" data-slide-to="1"></li>
-      </ol>
-
-      <!-- wrapper for slides -->
-      <div class="carousel-inner" role="listbox">
-        <!-- Completed Projects -->
-        <div class="item active">
-          <div class="col-md-12 co-sm-12 proj-wrapper">
-            <div class="col-md-1 col-sm-1"></div>
-
-            <div class="col-md-3 col-sm-3 thumbnail">
-              <h3>Camper News</h3>
-              <img class='img img-responsive' src="https://docs.google.com/uc?id=0B46iINhPgLTtaktqbjhzSjgyN2M" alt="camper news">
-              <p><b>Bootstrap</b> and <b>Angular</b> project that pulls camper news from <a href="http://www.freecodecamp.com/news/hot">FreeCodeCamp news api</a>.</p>
-              <hr>
-              <p>Project available at <a href="http://codepen.io/thuongho/pen/pjLrWJ">codepen.io/thuongho</a></p>
-            </div>
-
-            <div class="col-md-3 col-sm-3 thumbnail">
-              <h3>DJM Clothing Store</h3>
-              <img class='img img-responsive' src="https://docs.google.com/uc?id=0B46iINhPgLTtY3h3ckJfOFIwajQ" alt="djm ecommerce site">
-              <p><b>Bootstrap</b> and <b>Ruby on Rails</b> ecommerce site that integrates the <b>Paypal api</b>.
-              </p>
-              <hr>
-              <p>View the site at <a href="http://dontjudgeme.herokuapp.com/">dontjudgeme.herokuapp.com</a></p>
-            </div>
-
-            <div class="col-md-3 col-sm-3 thumbnail">
-              <h3>ThreeJS Challenge</h3>
-              <img class='img img-responsive' src="https://docs.google.com/uc?id=0B46iINhPgLTtdUUwNjdiUy1oUHM" alt="threejs challenge">
-              <p>A challenge using <b>Bootstrap</b>, <b>Angular</b>, <b>ThreeJS</b> and a call to a <b>REST API</b>.
-              </p>
-              <hr>
-              <p>View the site at <a href="http://thuongho.github.io/holo-challenge/">http://thuongho.github.io/holo-challenge/</a></p>
-            </div>
-
-            <div class="carousel-caption">
-              <h2>Completed Projects</h2>
-              <p>Ready to serve.</p>
-            </div>
-          </div>
-        </div>  <!-- end item -->
-
-
-        <!-- Projects Still in the Works -->
-        <div class="item">
-          <div class="col-md-12 co-sm-12 proj-wrapper">
-            <div class="col-md-1 col-sm-1"></div>
-
-            <div class="col-md-3 col-sm-3 thumbnail">
-              <h3>onTrack Web App</h3>
-              <img class='img img-responsive' src="https://docs.google.com/uc?id=0B46iINhPgLTtMWZHak1BeUJ1Q3c" alt="onTrack web app">
-              <p>Goal tracking web app developed using the <b>MEAN (MongoDB, Express, Angular, Node)</b> stack. The source code can be viewed on <a href="https://github.com/thuongho/onTrack">Github</a>.</p>
-              <hr>
-              <p>View the live site at <a href="https://keepmeontrack.herokuapp.com/">keepmeontrack.herokuapp.com</a></p>
-            </div>
-
-            <div class="col-md-3 col-sm-3 thumbnail">
-              <h3>Pomodoro Clock</h3>
-              <img class='img img-responsive' src="https://docs.google.com/uc?id=0B46iINhPgLTtQkl4eTh6UldzX2M" alt="pomodoro clock">
-              <p>Pomodoro clock built using <b>jQuery</b> with very minimal <b>Bootstrap</b> styling.</p>
-              <hr>
-              <p>Project available at <a href="http://codepen.io/thuongho/pen/adVeGz">codepen.io/thuongho</a></p>
-            </div>
-
-            <div class="col-md-3 col-sm-3 thumbnail">
-              <h3>Open311 App</h3>
-              <img class='img img-responsive' src="https://docs.google.com/uc?id=0B46iINhPgLTtSjBEUEZ4WEhPeVU" alt="open311 app">
-              <p>An open source project where I am working with a team to build a mobile app that provides open communications with public services and San Jose's government. <b>Angular</b> and <b>Ionic</b> are used in this project.</p>
-              <hr>
-              <p>Project available at <a href="https://github.com/codeforsanjose/sj311-ionic">codeforsanjose/sj311-ionic</a></p>
-            </div>
-
-            <div class="carousel-caption">
-              <h2>Fire Hot Projects Still in the Works</h2>
-              <p>Hot in the oven.</p>
-            </div>
-          </div>
-        </div>  <!-- end item -->
-        <!-- Controls -->
-        <a href="#carousel-projects" class="left carousel-control" role="button" data-slide="prev">
-          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a href="#carousel-projects" class="right carousel-control" role="button" data-slide="next">
-          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
-      </div>  <!-- end carousel inner -->
-    </div>  <!-- end carousel -->
-  </div>  <!-- end portfolio -->
-  <!-- ***************** end portfolio ***************** -->
-
-  <!-- 
-  =================
-  Footer 
-  =================
-  -->
-  <footer class='jumbotron' id="links">
-    <h2 class='text-center'>Contact me</h2>
-    <div class='row'>
-      <div class='col-md-4 col-sm-12'>
-        <a class='contacts' href='https://twitter.com/ThuongTHo' target='_blank' alt="twitter">Twitter</a>
-        <a class='contacts' href='https://www.linkedin.com/in/thuongtho' target='_blank' alt="linkedin">LinkedIn</a>
-        <a class='contacts' href='http://www.facebook.com/thuong.t.ho2' target='_blank' alt="facebook">Facebook</a>
-        <a class='contacts' href='mailto:samone003@gmail.com' target='_blank' alt="gmail">Gmail</a>
-      </div>
-      <div class='col-md-4 col-sm-12'>
-        <a class='contacts' href='http://www.freecodecamp.com/thuongho' target='_blank' alt="freecodecamp">FreeCodeCamp</a>
-        <a class='contacts' href='https://github.com/thuongho' target='_blank'>Github</a>
-        <a class='contacts' href='http://codepen.io/thuongho/' target='_blank' alt="codepen">CodePen</a>
-        <a class='contacts' href='https://99designs.com/profiles/tuneout' target='_blank' alt="99design">99Design</a>
-      </div>
-      <div class='col-md-4 col-sm-12'>
-        <a class='contacts' href='https://www.instagram.com/thoughtless_tune/' target='_blank' alt="instagram">Instagram</a>
-        <a class='contacts' href='https://www.reddit.com/user/Thoughtless_tune/' target='_blank' alt="reddit">Reddit</a>
-        <a class='contacts' href='https://www.pinterest.com/samone003/' target='_blank' alt="pinterest">Pinterest</a>
+</header>
+<!-- Navigation -->
+<div id="nav">
+  <nav class="navbar navbar-custom">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse"> <i class="fa fa-bars"></i> </button>
+        <a class="navbar-brand page-scroll" href="#page-top">Thuong Ho</a> </div>
+      
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+        <ul class="nav navbar-nav">
+          <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+          <li class="hidden"> <a href="#page-top"></a> </li>
+          <li> <a class="page-scroll" href="#about">About</a> </li>
+          <li> <a class="page-scroll" href="#portfolio">Portfolio</a> </li>
+          <li> <a class="page-scroll" href="#skills">Skills</a> </li>
+          <li> <a class="page-scroll" href="#contact">Contact</a> </li>
+        </ul>
       </div>
     </div>
-    <p class="copyright"><span class="thuong-brand">Dream Vault</span> &copy; 2016. Powered by <a href="https://github.com/">Github</a>.</p>
-  </footer>  <!-- end footer -->
-</div>  <!-- end container fluid -->
+  </nav>
+</div>
+<!-- About Section -->
+<div id="about">
+  <div class="container">
+    <div class="section-title text-center center">
+      <h2>About me</h2>
+      <hr>
+    </div>
+    <div class="row">
+      <div class="col-md-12 text-center"><img src="img/about.jpg" class="img-responsive"></div>
+      <div class="col-md-8 col-md-offset-2">
+        <div class="about-text">
+          <p>I’m a Full-Stack Software Engineer currently located in the Bay Area. I started off with Ruby and then found the love of my life in JavaScript. Now I love all things JS from front to back.</p>
+          <p>In my free time, I like to play with new frameworks and technologies. At times, when I am not burning the midnight oil and hacking on a project, you can find me exploring the bay to find my balance.</p>
+          <!-- <p class="text-center"><a class="btn btn-primary" href="#"><i class="fa fa-download"></i> Download Resume</a></p> -->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
-<!-- google analytics -->
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+<!-- Skills Section -->
+<div id="skills" class="text-center">
+  <div class="container">
+    <div class="section-title center">
+      <h2>My Skills</h2>
+      <hr>
+    </div>
+    <div class="row">
+      <div class="col-md-4 skills">
+        <h4>HTML5 / CSS3 / Sass / Bootstrap</h4>
+      </div>
+      <div class="col-md-8 skills">
+        <div class="progress">
+          <div class="progress-bar" role="progressbar" aria-valuenow="70"
+          aria-valuemin="0" aria-valuemax="100" style="width:95%">
+            <span class="sr-only">95%</span>
+          </div>
+        </div>
+      </div>
 
-  ga('create', 'UA-72752925-1', 'auto');
-  ga('send', 'pageview');
+      <div class="col-md-4 skills">
+        <h4>JavaScript / AngularJS / Ionic / Node.js</h4>
+      </div>
+      <div class="col-md-8 skills">
+        <div class="progress">
+          <div class="progress-bar" role="progressbar" aria-valuenow="70"
+          aria-valuemin="0" aria-valuemax="100" style="width:90%">
+            <span class="sr-only">90%</span>
+          </div>
+        </div>
+      </div>
 
-</script>
+      <div class="col-md-4 skills">
+        <h4>Ruby / Ruby on Rails / Shell Scripting</h4>
+      </div>
+      <div class="col-md-8 skills">
+        <div class="progress">
+          <div class="progress-bar" role="progressbar" aria-valuenow="70"
+          aria-valuemin="0" aria-valuemax="100" style="width:85%">
+            <span class="sr-only">85%</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 skills">
+        <h4>MySQL / MongoDB / PostGreSQL / SQLite</h4>
+      </div>
+      <div class="col-md-8 skills">
+        <div class="progress">
+          <div class="progress-bar" role="progressbar" aria-valuenow="70"
+          aria-valuemin="0" aria-valuemax="100" style="width:85%">
+            <span class="sr-only">85%</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- Portfolio Section -->
+<div id="portfolio">
+  <div class="container">
+    <div class="section-title text-center center">
+      <h2>My Portfolio</h2>
+      <hr>
+      <div class="clearfix"></div>
+      <p>Check out some of my work as well as projects I've collaborated on.</p>
+    </div>
+    <div class="categories">
+      <ul class="cat">
+        <li>
+          <ol class="type">
+            <li><a href="#" data-filter="*" class="active">All</a></li>
+            <li><a href="#" data-filter=".web">Web App Development</a></li>
+            <li><a href="#" data-filter=".app">Mobile App Development</a></li>
+          </ol>
+        </li>
+      </ul>
+      <div class="clearfix"></div>
+    </div>
+    <div class="row">
+      <div class="portfolio-items">
+        <div class="col-sm-6 col-md-3 col-lg-3 web">
+          <div class="portfolio-item">
+            <div class="hover-bg"> <a href="img/portfolio/01.png" title="DJM clothing e-commerce platform built on Ruby on Rails and integrates the PayPal API. - https://github.com/thuongho/edm" rel="prettyPhoto">
+              <div class="hover-text">
+                <h4>DJM Clothing</h4>
+                <small>Ruby on Rails, Bootstrap, PayPal API</small>
+                <div class="clearfix"></div>
+                <i class="fa fa-search"></i> </div>
+              <img src="img/portfolio/01.png" class="img-responsive" alt="DJM Clothing E-commerce Platform"> </a> </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3 col-lg-3 app">
+          <div class="portfolio-item">
+            <div class="hover-bg"> <a href="img/portfolio/02.png" title="Mobile-first networking platform enabling professionals to find others to get lunch with using LinkedIn profiles and proximity - https://github.com/EclecticKlos/lunchWith" rel="prettyPhoto">
+              <div class="hover-text">
+                <h4>lunchWith mobile app</h4>
+                <small>Ionic, MEAN</small>
+                <div class="clearfix"></div>
+                <i class="fa fa-search"></i> </div>
+              <img src="img/portfolio/02.png" class="img-responsive" alt="lunchWith"> </a> </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3 col-lg-3 web">
+          <div class="portfolio-item">
+            <div class="hover-bg"> <a href="img/portfolio/03.png" title="http://thuongho.github.io/holo-challenge" rel="prettyPhoto">
+              <div class="hover-text">
+                <h4>HoloBuilder Challenge with ThreeJS</h4>
+                <small>Three.js, Bootstrap, Angular, Node, REST</small>
+                <div class="clearfix"></div>
+                <i class="fa fa-search"></i> </div>
+              <img src="img/portfolio/03.png" class="img-responsive" alt="HoloBuilder Challenge with ThreeJS"> </a> </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-md-3 col-lg-3 app">
+          <div class="portfolio-item">
+            <div class="hover-bg"> <a href="img/portfolio/05.png" title="Mobile hybrid app that provides open communication with public services and San Jose’s local government. - https://github.com/codeforsanjose/open311-ionic" rel="prettyPhoto">
+              <div class="hover-text">
+                <h4>San Jose Open311 Mobile App</h4>
+                <small>Ionic, Angular</small>
+                <div class="clearfix"></div>
+                <i class="fa fa-search"></i> </div>
+              <img src="img/portfolio/05.png" class="img-responsive" alt="San Jose Open311 Mobile App"> </a> </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Contact Section -->
+<div id="contact" class="text-center">
+  <div class="container">
+    <div class="section-title center">
+      <h2>Contact me</h2>
+      <hr>
+    </div>
+    <div class="col-md-8 col-md-offset-2">
+      <div class="col-md-4"> <i class="fa fa-map-marker fa-2x"></i>
+        <p>San Jose, CA</p>
+      </div>
+      <div class="col-md-4"> <i class="fa fa-envelope-o fa-2x"></i>
+        <p>thuong.t.ho@gmail.com</p>
+      </div>
+      <div class="col-md-4"> <i class="fa fa-phone fa-2x"></i>
+        <p>408 384 8664</p>
+      </div>
+      <hr>
+      <div class="clearfix"></div>
+    </div>
+    <div class="col-md-8 col-md-offset-2">
+      <div class="social">
+        <ul>
+          <li><a href="https://twitter.com/ThuongTHo"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="https://github.com/thuongho"><i class="fa fa-github"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/thuongtho"><i class="fa fa-linkedin"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="footer">
+  <div class="container text-center">
+    <div class="fnav">
+      <p>Copyright &copy; 2016 Thuong Ho. Powered by <a href="http://github.com">Github</a>.</p>
+    </div>
+  </div>
+</div>
+<script type="text/javascript" src="js/jquery.1.11.1.js"></script> 
+<script type="text/javascript" src="js/bootstrap.js"></script> 
+<script type="text/javascript" src="js/SmoothScroll.js"></script> 
+<script type="text/javascript" src="js/easypiechart.js"></script> 
+<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script> 
+<script type="text/javascript" src="js/jquery.isotope.js"></script> 
+<script type="text/javascript" src="js/jquery.counterup.js"></script> 
+<script type="text/javascript" src="js/waypoints.js"></script> 
+<script type="text/javascript" src="js/jqBootstrapValidation.js"></script> 
+<script type="text/javascript" src="js/contact_me.js"></script> 
+<script type="text/javascript" src="js/owl.carousel.js"></script> 
+<script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
