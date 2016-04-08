@@ -65,6 +65,9 @@ ul, ol {
 	webkit-padding: 0;
 	moz-padding: 0;
 }
+.hide {
+	display: hidden;
+}
 /* Navigation */
 #nav {
 	z-index: 9999;
